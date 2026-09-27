@@ -1,0 +1,9 @@
+model_id: facebook/dinov3-vitb16-pretrain-lvd1689m
+revision: 5931719e67bbdb9737e363e781fb0c67687896bc
+token_pooling: patch_mean
+tiling:
+  image_page: 0
+  tile_size: 224
+  stride: 224
+  intensity_min: 0.0
+  intensity_max: 255.0

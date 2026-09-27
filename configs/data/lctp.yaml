@@ -1,0 +1,11 @@
+# Paths are relative to the directory where commands are run.
+raw_root: data/raw/lctp
+metadata: data/raw/lctp/metadata.parquet.gzip
+plate_starts: data/raw/lctp/plate_starts.json
+output_root: data/processed/lctp
+input_format: lctp
+dataset_version: lctp-local
+seed: 42
+expected_interval_hours: 2.0
+exclude_unlabelled: false
+exclude_controls: false

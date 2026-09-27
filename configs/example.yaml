@@ -1,0 +1,11 @@
+# Example measured-timepoint MoA classification inputs.
+compounds: data/processed/chemistry/compounds.parquet
+observations: data/processed/lctp/observations.parquet
+split_manifest: data/splits/compound_disjoint/compound_disjoint.parquet
+features: data/cache/dinov3
+output: outputs/moa_24h
+time_hours: 24
+seed: 42
+bootstrap_draws: 500
+morgan_radius: 2
+morgan_bits: 2048

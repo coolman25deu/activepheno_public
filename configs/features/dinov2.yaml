@@ -1,0 +1,9 @@
+model_id: facebook/dinov2-base
+revision: f9e44c814b77203eaa57a6bdbbd535f21ede1415
+token_pooling: patch_mean
+tiling:
+  image_page: 0
+  tile_size: 224
+  stride: 224
+  intensity_min: 0.0
+  intensity_max: 255.0
