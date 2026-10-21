@@ -43,9 +43,9 @@
     "results/lctp_48h_v1/metrics.csv": "43ae553d15def4af46310a20f75df154ffee55237552bd553ea01255b602e8fa",
     "results/lctp_48h_v1/PROTOCOL.md": "21d58960aed8836578b781cb08cdf584495bb2ad3e49c0f5151bd6e527e48390",
     "results/lctp_48h_v1/single_time.png": "60df327c35e30c120c49e4db89033182548ae8aab5cf9fa02f9e4f3603176452",
-    "results/lctp_48h_v1/single_time.svg": "5eb31520046844c4e9b2ed23822fab9600a1dacf625de09ecead9d5ac29c0c32",
+    "results/lctp_48h_v1/single_time.svg": "bffec6444d2f24f0cffd889c99b76d4f73fa201e80dd15e12eb9beeeb1d37abf",
     "results/lctp_48h_v1/cumulative_history.png": "36c29489bf6a80f9049ba16582e430e6f0a33f4fc353e92ac48046a2fcc01cda",
-    "results/lctp_48h_v1/cumulative_history.svg": "2750cec3816d7a9e73b0f432053c55c4bce11a22f2e79979987f4e63d7db833b",
-    "scripts/plot_demo_results.py": "b9db37fb91d8f7c4f8b02ab82620ac313ec3d60a007de87dfe26cef38d5e44d2"
+    "results/lctp_48h_v1/cumulative_history.svg": "fc33901bd04c1df9af6c32da6bbe3a9af49f9b5b9c950d840108da75df346191",
+    "scripts/plot_demo_results.py": "dbf8914e2617e2dcc7c9d081e71ead8557630140a3ff72f3a0ba3037913dae0a"
   }
 }

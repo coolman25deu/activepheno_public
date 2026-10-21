@@ -71,6 +71,8 @@ def main() -> None:
             target = args.output_dir / f"{condition}.{extension}"
             metadata = {"Software": "ActivePheno"} if extension == "png" else {"Date": None, "Creator": "ActivePheno"}
             fig.savefig(target, dpi=180, metadata=metadata, facecolor="white")
+            if extension == "svg":
+                target.write_text("\n".join(line.rstrip() for line in target.read_text(encoding="utf-8").splitlines()) + "\n", encoding="utf-8")
             print(target.name)
         plt.close(fig)
 
