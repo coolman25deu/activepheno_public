@@ -1,0 +1,17 @@
+split,input,time_hours,representation,balanced_accuracy_mean,balanced_accuracy_seed_sd,n_seeds
+compound_disjoint,cumulative_history,48,DINOv2,0.777777777777778,0.0962250448649376,3
+compound_disjoint,cumulative_history,48,DINOv3,0.805555555555555,0.127293769304329,3
+compound_disjoint,cumulative_history,48,DINOv3 + Morgan,0.694444444444445,0.0962250448649375,3
+compound_disjoint,cumulative_history,48,Morgan,0.666666666666667,0.0833333333333333,3
+scaffold_disjoint,cumulative_history,48,DINOv2,0.722222222222222,0.264983111504707,3
+scaffold_disjoint,cumulative_history,48,DINOv3,0.898148148148148,0.0892930626017866,3
+scaffold_disjoint,cumulative_history,48,DINOv3 + Morgan,0.583333333333333,0.154660121189723,3
+scaffold_disjoint,cumulative_history,48,Morgan,0.527777777777778,0.209717623201965,3
+compound_disjoint,single_time,48,DINOv2,0.805555555555555,0.0962250448649375,3
+compound_disjoint,single_time,48,DINOv3,0.75,0.0833333333333333,3
+compound_disjoint,single_time,48,DINOv3 + Morgan,0.722222222222222,0.0481125224324688,3
+compound_disjoint,single_time,48,Morgan,0.666666666666667,0.0833333333333333,3
+scaffold_disjoint,single_time,48,DINOv2,0.796296296296296,0.0160375074774896,3
+scaffold_disjoint,single_time,48,DINOv3,0.759259259259259,0.0975523495634513,3
+scaffold_disjoint,single_time,48,DINOv3 + Morgan,0.583333333333333,0.200308404192444,3
+scaffold_disjoint,single_time,48,Morgan,0.527777777777778,0.209717623201965,3

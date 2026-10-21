@@ -31,6 +31,35 @@ Compound-disjoint splits keep every compound and its trajectories in one partiti
 
 Image observations are measured frames only. Time is elapsed from the first scan unless the source provides a verified treatment-time origin. Evaluation uses acquired image frames at documented elapsed times.
 
+## Selected results
+
+A focused [48 h LCTP example](results/README.md) compares image-only,
+chemistry-only and image + chemistry classifiers on compound-disjoint and
+scaffold-disjoint test splits. Every value is mean ± sample SD over **all three
+seeds (42/43/44)**.
+
+| Representation | Compound-disjoint BA (%) | Scaffold-disjoint BA (%) |
+|---|---:|---:|
+| Morgan | 66.7 ± 8.3 | 52.8 ± 21.0 |
+| DINOv2 | 80.6 ± 9.6 | 79.6 ± 1.6 |
+| DINOv3 | 75.0 ± 8.3 | 75.9 ± 9.8 |
+| DINOv3 + Morgan | 72.2 ± 4.8 | 58.3 ± 20.0 |
+
+*Single observed scan at 48 h; compound-level test balanced accuracy.*
+
+![Single-timepoint results](results/lctp_48h_v1/single_time.png)
+
+The separate observed-history example uses acquired images from 0 through 48 h:
+
+![Observed-history results](results/lctp_48h_v1/cumulative_history.png)
+
+These are exploratory results on previously inspected test sets. Error bars
+show seed SD, not confidence intervals; the small, overlapping compound splits
+do not support biological-replication or universal-superiority claims. The
+[protocol](results/lctp_48h_v1/PROTOCOL.md) documents cohort selection,
+trajectory weighting, validation-only model selection and reproduction limits.
+No individual predictions or full time-grid tables are released.
+
 ## Reproducibility
 
 Configurations pin DINO checkpoint revisions and keep data, cache, and output paths configurable. Splits and model selection use explicit seeds; hyperparameters are selected on validation compounds. Tests use small synthetic fixtures and do not download pretrained weights.

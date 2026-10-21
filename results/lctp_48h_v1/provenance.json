@@ -1,0 +1,51 @@
+{
+  "release": "lctp_48h_v1",
+  "release_date": "2026-10-21",
+  "scope": "Selected aggregate test results only; previously inspected test sets; exploratory",
+  "dataset_doi": "10.17044/SCILIFELAB.29315642",
+  "source_description": "Matched frozen-representation benchmark, primary complete-grid cohort, equal-trajectory pooled evaluation",
+  "source_aggregate_sha256": "0e4a7eb425a4c81dbef11ba6f50234a9d67a4194c3eee82e94cb9f34f1929faa",
+  "source_lock_sha256": "53d5b3b75a28967d4ac7525492792f4ef845c5b77b0cf7020e164b41433bb8f3",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregation": "Equal seed mean and sample seed SD (ddof=1); SD is not a confidence interval",
+  "time_hours": 48,
+  "inputs": [
+    "single_time",
+    "cumulative_history"
+  ],
+  "splits": [
+    "compound_disjoint",
+    "scaffold_disjoint"
+  ],
+  "representations": [
+    "Morgan",
+    "DINOv2",
+    "DINOv3",
+    "DINOv3 + Morgan"
+  ],
+  "verification": {
+    "contributing_fits_checked": 48,
+    "aggregate_rows": 16,
+    "checks": [
+      "saved trajectory probability reaggregation",
+      "fixed six-class argmax and BA recomputation",
+      "shared test membership across methods and input conditions",
+      "all three seeds required",
+      "aggregate mean and sample SD matched to original summary"
+    ],
+    "refits": 0
+  },
+  "artifacts_sha256": {
+    "results/lctp_48h_v1/metrics.csv": "43ae553d15def4af46310a20f75df154ffee55237552bd553ea01255b602e8fa",
+    "results/lctp_48h_v1/PROTOCOL.md": "21d58960aed8836578b781cb08cdf584495bb2ad3e49c0f5151bd6e527e48390",
+    "results/lctp_48h_v1/single_time.png": "60df327c35e30c120c49e4db89033182548ae8aab5cf9fa02f9e4f3603176452",
+    "results/lctp_48h_v1/single_time.svg": "5eb31520046844c4e9b2ed23822fab9600a1dacf625de09ecead9d5ac29c0c32",
+    "results/lctp_48h_v1/cumulative_history.png": "36c29489bf6a80f9049ba16582e430e6f0a33f4fc353e92ac48046a2fcc01cda",
+    "results/lctp_48h_v1/cumulative_history.svg": "2750cec3816d7a9e73b0f432053c55c4bce11a22f2e79979987f4e63d7db833b",
+    "scripts/plot_demo_results.py": "b9db37fb91d8f7c4f8b02ab82620ac313ec3d60a007de87dfe26cef38d5e44d2"
+  }
+}
